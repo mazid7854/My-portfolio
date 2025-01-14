@@ -52,8 +52,6 @@ const Contact = () => {
     errors.message = "";
   };
 
-  console.log(form);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validate();

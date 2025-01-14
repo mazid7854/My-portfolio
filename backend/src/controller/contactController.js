@@ -119,7 +119,6 @@ export const contact_post = async (req, res) => {
       </html>
     `,
     });
-    console.log("Message sent:", info);
   }
 
   main().catch(console.error);
