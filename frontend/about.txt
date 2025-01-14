@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Carlito
+- Font Author: Copyright 2013 The Carlito Project Authors (https://github.com/googlefonts/carlito)
+- Font Source: https://fonts.gstatic.com/s/carlito/v3/3Jn4SDPw3m-pk039BIykaX0vUuhCyOo.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
