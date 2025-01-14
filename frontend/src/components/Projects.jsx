@@ -59,7 +59,7 @@ const ProjectCard = ({
             >
               {" "}
               <img
-                src="/public/github-mark-white.svg"
+                src="/github-mark-white.svg"
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
