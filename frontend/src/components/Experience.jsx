@@ -12,8 +12,8 @@ const Experience = () => {
     {
       id: 1,
       date: "September 2022 - August 2024",
-      title: "w3Origin",
-      location: "New Delhi",
+      title: "MERN Developer",
+      location: "w3Origin, New Delhi, India",
       description:
         "I was responsible for developing, maintaining, and designing scalable web applications, integrating APIs, and working on front-end and back-end development using MongoDB, Express.js, React, and Node.js",
     },
