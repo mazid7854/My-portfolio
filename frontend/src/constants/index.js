@@ -18,185 +18,7 @@ export const ABOUT_TEXT = `I am a proficient MERN stack developer with over two 
 
 // Frontend projects
 
-export const frontEndProjects = [
-  {
-    name: "Frontend Project 1",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Frontend Project 2",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Frontend Project 3",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Frontend Project 4",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-];
-
-// Backend projects
-
-export const backendProjects = [
-  {
-    name: "Backend Project 1",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Backend Project 2",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Backend Project 3",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Backend Project 4",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: "",
-    source_code_link: "https://github.com/",
-  },
-];
-
-// Fullstack projects
-
-export const fullStackProjects = [
+export const projects = [
   {
     name: "India Estate",
     description:
@@ -219,77 +41,71 @@ export const fullStackProjects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "/public/indiaEstate.png",
+    image: "/indiaEstate.png",
     source_code_link: "https://github.com/mazid7854/IndiaEstate.git",
+    project_link: "https://indiastate.netlify.app/",
   },
   {
-    name: "Fullstack Project 2",
+    name: "Project 2",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The project is currently in the deployment phase, and I am actively working on it to ensure everything is set up correctly and efficiently.",
     tags: [
       {
-        name: "react",
+        name: "null",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "null",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "null",
         color: "pink-text-gradient",
       },
     ],
-    image: "",
+    image: "/comingSoon.jpg",
     source_code_link: "https://github.com/",
   },
   {
-    name: "Fullstack Project 3",
+    name: "Project 3",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The project is currently in the deployment phase, and I am actively working on it to ensure everything is set up correctly and efficiently.",
     tags: [
       {
-        name: "react",
+        name: "null",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "null",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "null",
         color: "pink-text-gradient",
       },
     ],
-    image: "",
+    image: "/comingSoon.jpg",
     source_code_link: "https://github.com/",
   },
   {
-    name: "Fullstack Project 4",
+    name: "Project 4",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "The project is currently in the deployment phase, and I am actively working on it to ensure everything is set up correctly and efficiently.",
     tags: [
       {
-        name: "react",
+        name: "null",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "null",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "null",
         color: "pink-text-gradient",
       },
     ],
-    image: "",
+    image: "/comingSoon.jpg",
     source_code_link: "https://github.com/",
   },
 ];
-
-//projects
-export const projects = {
-  frontend: frontEndProjects,
-  backend: backendProjects,
-  fullstack: fullStackProjects,
-};

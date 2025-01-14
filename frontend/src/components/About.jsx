@@ -30,7 +30,7 @@ const handleDownload = () => {
   console.log("clicked");
 
   // Trigger the download of the PDF
-  const pdfUrl = "/resume.pdf"; // Relative path to the PDF file in the public folder
+  const pdfUrl = "/mazid_resume.pdf"; // Relative path to the PDF file in the public folder
   const link = document.createElement("a");
   link.href = pdfUrl;
   link.download = "resume.pdf"; // File name for the downloaded file
@@ -122,7 +122,7 @@ const About = () => {
                   <strong className="absolute top-3 left-0 w-[115px] pr-5">
                     <span className="px-1 py-0.5 rounded-sm">Age:</span>
                   </strong>
-                  27 Years
+                  28 Years
                 </motion.li>
                 <motion.li
                   variants={item}
@@ -155,7 +155,7 @@ const About = () => {
                   <strong className="absolute top-3 left-0 w-[115px] pr-5">
                     <span className="px-1 py-0.5 rounded-sm">Phone:</span>
                   </strong>
-                  <a href="tel:8010050062">8010050062</a>
+                  <a href="tel:8010050062">+918010050062</a>
                 </motion.li>
                 <motion.li
                   variants={item}

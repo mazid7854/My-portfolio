@@ -62,7 +62,7 @@ const Contact = () => {
       return;
     }
     setLoading(true);
-    axios.post("http://localhost:3000/contact", form).then((response) => {
+    axios.post("http://localhost:3200/contact", form).then((response) => {
       // handle success
       console.log(response);
       setLoading(false);

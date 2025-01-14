@@ -1,4 +1,4 @@
-import Client from "../module/clientModel.js";
+import Client from "../model/clientModel.js";
 import nodemailer from "nodemailer";
 
 export const contact_post = async (req, res) => {
@@ -30,14 +30,14 @@ export const contact_post = async (req, res) => {
     requireTLS: true,
     auth: {
       user: "mail@mazid.info",
-      pass: "4FMoI)GeYNJL",
+      pass: "Y{)m?]nPW]AV",
     },
   });
 
   async function main() {
     const info = await transporter.sendMail({
       from: "mail@mazid.info",
-      to: "mazidali218@gmail.com",
+      to: "mail@mazid.info",
       subject: "Enquiry from portfolio",
       html: `
       <!DOCTYPE html>

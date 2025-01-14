@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Tilt } from "react-tilt";
 import { projects } from "../constants";
 import { motion } from "framer-motion";
-import FrontendProjectComponent from "../constants/FrontendProjectComponent";
-import BackendProjectComponent from "../constants/BackendProjectComponent";
-import FullStackProjectComponent from "../constants/FullStackProjectComponent";
 import { ScrollLink } from "react-scroll";
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -33,6 +30,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  project_link,
 }) => {
   return (
     <div className=" pb-5">
@@ -44,7 +42,10 @@ const ProjectCard = ({
         }}
         className="border border-white p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div
+          onClick={() => window.open(project_link, "_blank")}
+          className="relative w-full h-[230px]"
+        >
           <img
             src={image}
             alt="project_image"
@@ -66,10 +67,11 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 sm:h-[130px] h-[120px]">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[14px] ">{description}</p>
         </div>
+        {/* <button>Read more</button> */}
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -94,24 +96,7 @@ const Projects = () => {
     setShowProjects(e);
   };
 
-  const maxLength = Math.max(
-    projects.frontend.length,
-    projects.backend.length,
-    projects.fullstack.length
-  );
-  const allProjects = [];
-
-  for (let i = 0; i < maxLength; i++) {
-    if (i < projects.frontend.length) {
-      allProjects.push(projects.frontend[i]);
-    }
-    if (i < projects.backend.length) {
-      allProjects.push(projects.backend[i]);
-    }
-    if (i < projects.fullstack.length) {
-      allProjects.push(projects.fullstack[i]);
-    }
-  }
+  const maxLength = Math.max();
 
   const handleShowMore = () => {
     setShowAll(!showAll);
@@ -123,105 +108,58 @@ const Projects = () => {
         My <span className="text-[#915EFF]">Work</span>
       </h1>
 
-      <div className="flex justify-center items-center">
-        <button
-          onClick={(e) => showProjectsHandler("all")}
-          className={`block mx-auto px-4 py-2 rounded-full transition-all duration-200 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-xl font-bold ${
-            showProjects === "all"
-              ? "underline decoration-4 decoration-[#915EFF]"
-              : "text-transparent"
-          }`}
-        >
-          All
-        </button>
-        <button
-          onClick={(e) => showProjectsHandler("frontend")}
-          className={`block mx-auto px-4 py-2 rounded-full transition-all duration-200 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-xl font-bold ${
-            showProjects === "frontend"
-              ? "underline decoration-4 decoration-[#915EFF]"
-              : "text-transparent"
-          }`}
-        >
-          Front-end
-        </button>
-        <button
-          onClick={(e) => showProjectsHandler("backend")}
-          className={`block mx-auto px-4 py-2 rounded-full transition-all duration-200 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-xl font-bold ${
-            showProjects === "backend"
-              ? "underline decoration-4 decoration-[#915EFF]"
-              : "text-transparent"
-          }`}
-        >
-          Back-end
-        </button>
-        <button
-          onClick={(e) => showProjectsHandler("fullstack")}
-          className={`block mx-auto px-4 py-2 rounded-full transition-all duration-200 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-xl font-bold ${
-            showProjects === "fullstack"
-              ? "underline decoration-4 decoration-[#915EFF]"
-              : "text-transparent"
-          }`}
-        >
-          full-stack
-        </button>
-      </div>
+      <div className="flex justify-center items-center"></div>
 
-      {showProjects === "all" && (
-        <>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={container}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: true, amount: 1 }}
-            className="mt-20 flex flex-wrap gap-7 justify-center"
-          >
-            {showAll
-              ? allProjects.map((project, index) => (
+      <>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={container}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, amount: 1 }}
+          className=" flex flex-wrap gap-7 justify-center"
+        >
+          {showAll
+            ? projects.map((project, index) => (
+                <ProjectCard
+                  key={`project-${index}`}
+                  index={index}
+                  {...project}
+                />
+              ))
+            : projects
+                .slice(0, 3)
+                .map((project, index) => (
                   <ProjectCard
                     key={`project-${index}`}
                     index={index}
                     {...project}
                   />
-                ))
-              : allProjects
-                  .slice(0, 3)
-                  .map((project, index) => (
-                    <ProjectCard
-                      key={`project-${index}`}
-                      index={index}
-                      {...project}
-                    />
-                  ))}
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={container}
-            transition={{ duration: 1.5 }}
-            viewport={{ once: true, amount: 0.3 }}
+                ))}
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={container}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <button
+            onClick={() => {
+              handleShowMore();
+              if (showAll) {
+                window.scrollTo({
+                  top: document.getElementById("work").offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
+            className="block mx-auto px-4 py-2 rounded-full  transition-all duration-200 "
           >
-            <button
-              onClick={() => {
-                handleShowMore();
-                if (showAll) {
-                  window.scrollTo({
-                    top: document.getElementById("work").offsetTop,
-                    behavior: "smooth",
-                  });
-                }
-              }}
-              className="block mx-auto px-4 py-2 rounded-full  transition-all duration-200 "
-            >
-              {showAll ? "Show Less" : "Click For More.."}
-            </button>
-          </motion.div>
-        </>
-      )}
-
-      {showProjects === "frontend" && <FrontendProjectComponent />}
-      {showProjects === "backend" && <BackendProjectComponent />}
-      {showProjects === "fullstack" && <FullStackProjectComponent />}
+            {showAll ? "Show Less" : "Click For More.."}
+          </button>
+        </motion.div>
+      </>
     </div>
   );
 };
