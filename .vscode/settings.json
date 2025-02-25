@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["mazid"]
+  "cSpell.words": ["mazid"],
+  "postman.settings.dotenv-detection-notification-visibility": false
 }
