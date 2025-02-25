@@ -46,24 +46,28 @@ export const projects = [
     project_link: "https://indiastate.netlify.app/",
   },
   {
-    name: "Project 2",
+    name: "My Portfolio",
     description:
-      "The project is currently in the deployment phase, and I am actively working on it to ensure everything is set up correctly and efficiently.",
+      "Welcome to my portfolio! This project showcases my skills, projects, and experiences as a Full Stack Developer. Please click on the github icon for more details and source code.",
     tags: [
       {
-        name: "null",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "null",
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "null",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
-    image: "/comingSoon.jpg",
+    image: "/portfolio.png",
     source_code_link: "https://github.com/",
   },
   {
