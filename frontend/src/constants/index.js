@@ -68,28 +68,36 @@ export const projects = [
       },
     ],
     image: "/portfolio.png",
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mazid7854/My-portfolio.git/",
+    project_link: "https://github.com/mazid7854/My-portfolio.git/",
   },
   {
-    name: "Project 3",
+    name: "Electronic store (Backend)",
     description:
-      "The project is currently in the deployment phase, and I am actively working on it to ensure everything is set up correctly and efficiently.",
+      "This project serves as the backend for an electronics store application, developed using Java and Spring Boot. Please click on the github icon for more details and source code.",
     tags: [
       {
-        name: "null",
+        name: "java",
         color: "blue-text-gradient",
       },
+
       {
-        name: "null",
+        name: "springboot",
         color: "green-text-gradient",
       },
       {
-        name: "null",
+        name: "springdata",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mysql",
         color: "pink-text-gradient",
       },
     ],
-    image: "/comingSoon.jpg",
-    source_code_link: "https://github.com/",
+    image: "/code.jpg",
+    source_code_link:
+      "https://github.com/mazid7854/electronics-store-backend.git",
+    project_link: "https://github.com/mazid7854/electronics-store-backend.git",
   },
   {
     name: "Project 4",
