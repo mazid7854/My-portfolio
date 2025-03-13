@@ -60,19 +60,17 @@ const Contact = () => {
       return;
     }
     setLoading(true);
-    axios
-      .post("https://mazid.info/backend/api/contact", form)
-      .then((response) => {
-        // handle success
-        console.log(response);
-        setLoading(false);
-        alert("Thank you. I will get back to you as soon as possible.");
-        setForm({
-          name: "",
-          email: "",
-          message: "",
-        });
+    axios.post("https://mazid.info/api/contact", form).then((response) => {
+      // handle success
+      console.log(response);
+      setLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
+      setForm({
+        name: "",
+        email: "",
+        message: "",
       });
+    });
   };
   return (
     <div className="border-b border-neutral-900 sm:pb-24 pb-14">
