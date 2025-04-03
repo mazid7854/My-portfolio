@@ -1,5 +1,7 @@
 import Client from "../model/clientModel.js";
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+dotenv.config();
 
 export const contact_post = async (req, res) => {
   const { name, email, message } = req.body;
@@ -29,8 +31,8 @@ export const contact_post = async (req, res) => {
     secure: true,
     requireTLS: true,
     auth: {
-      user: "mail@mazid.info",
-      pass: "Y{)m?]nPW]AV",
+      user: process.env.MAIL_USERNAME,
+      pass: process.env.MAIL_PASSWORD,
     },
   });
 
